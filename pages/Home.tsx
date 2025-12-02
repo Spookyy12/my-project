@@ -11,21 +11,8 @@ const Home: React.FC = () => {
 
   return (
     <div className="animate-fade-in font-sans">
-      {/* Hero Section с фоновым изображением */}
-      <section 
-        className="min-h-[80vh] flex items-center justify-center text-center px-6 relative overflow-hidden"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 20% 80%, rgba(168, 134, 108, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(121, 143, 96, 0.05) 0%, transparent 50%),
-            linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 245, 240, 0.98) 100%),
-            url('/images/hero-bg.jpg')
-          `,
-          backgroundSize: 'cover, cover, auto, cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay, overlay, normal, normal',
-        }}
-      >
+      {/* Hero Section */}
+      <section className="min-h-[80vh] flex items-center justify-center text-center px-6 relative overflow-hidden">
         {/* Glass card for Hero Content */}
         <div className="bg-white/40 backdrop-blur-md rounded-[3rem] p-10 md:p-20 max-w-5xl mx-auto shadow-sm border border-white/50">
           <span className="text-sage-700 font-bold tracking-wider text-sm uppercase mb-4 block">Welcome to a safe space</span>
