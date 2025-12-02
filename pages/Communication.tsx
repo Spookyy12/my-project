@@ -203,7 +203,7 @@ const Communication: React.FC = () => {
                 onClick={() => { setMode('chat'); setStep(1); }}
                 disabled={step > 1}
                 className={`px-8 py-3 rounded-full flex items-center gap-2 transition-all duration-300 text-sm font-medium z-10 ${
-                  mode === 'chat' ? 'bg-sage-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-800'
+                  mode === 'chat' ? 'bg-sage-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-800'
                 } ${step > 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 <MessageSquare size={16} />
@@ -213,7 +213,7 @@ const Communication: React.FC = () => {
                 onClick={() => { setMode('call'); setStep(1); }}
                 disabled={step > 1}
                 className={`px-8 py-3 rounded-full flex items-center gap-2 transition-all duration-300 text-sm font-medium z-10 ${
-                  mode === 'call' ? 'bg-sage-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-800'
+                  mode === 'call' ? 'bg-sage-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-800'
                 } ${step > 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 <Phone size={16} />
@@ -224,7 +224,7 @@ const Communication: React.FC = () => {
         )}
 
         {/* Main Content Card */}
-        <div className="bg-white/80 backdrop-blur-md rounded-[2rem] shadow-xl shadow-sand-200/50 overflow-hidden border border-white/60 min-h-[500px] transition-all duration-500 max-w-4xl mx-auto relative">
+        <div className="bg-white/80 backdrop-blur-md rounded-[2rem] shadow-md shadow-sand-200/20 overflow-hidden border border-white/60 min-h-[500px] transition-all duration-500 max-w-4xl mx-auto relative">
           
           {/* Decorative background blob */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-terracotta-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
@@ -254,7 +254,7 @@ const Communication: React.FC = () => {
                   </div>
                   <button 
                     onClick={() => setStep(2)}
-                    className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-10 py-4 rounded-full text-lg font-medium w-full transition shadow-lg shadow-terracotta-100"
+                    className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-10 py-4 rounded-full text-lg font-medium w-full transition shadow-md"
                   >
                     Proceed to Payment (${PRICE_PER_SESSION})
                   </button>
@@ -278,7 +278,7 @@ const Communication: React.FC = () => {
                             onClick={() => handleSlotSelect(slot.id)}
                             className={`p-4 rounded-xl border text-sm flex flex-col items-center justify-center transition-all duration-200 ${
                               selectedSlot === slot.id 
-                                ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-md transform scale-105' 
+                                ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-sm transform scale-105' 
                                 : slot.available 
                                   ? 'bg-white/60 hover:bg-white border-sand-200 hover:border-terracotta-300 text-slate-700' 
                                   : 'bg-sand-50/50 border-sand-100 text-sand-300 cursor-not-allowed'
@@ -319,7 +319,7 @@ const Communication: React.FC = () => {
                      <button 
                       onClick={() => setStep(2)}
                       disabled={!selectedSlot}
-                      className="bg-terracotta-500 disabled:bg-sand-300 disabled:cursor-not-allowed hover:bg-terracotta-600 text-white px-10 py-4 rounded-full text-lg w-full max-w-sm transition shadow-lg shadow-terracotta-100"
+                      className="bg-terracotta-500 disabled:bg-sand-300 disabled:cursor-not-allowed hover:bg-terracotta-600 text-white px-10 py-4 rounded-full text-lg w-full max-w-sm transition shadow-md"
                     >
                       Continue to Payment
                     </button>
@@ -429,7 +429,7 @@ const Communication: React.FC = () => {
                   <button 
                     onClick={handleProceedPayment}
                     disabled={isProcessing}
-                    className={`w-full py-4 rounded-full text-lg transition flex justify-center items-center shadow-lg disabled:opacity-70 disabled:cursor-not-allowed font-medium gap-2 ${
+                    className={`w-full py-4 rounded-full text-lg transition flex justify-center items-center shadow-md disabled:opacity-70 disabled:cursor-not-allowed font-medium gap-2 ${
                       paymentMethod === 'paypal' 
                       ? 'bg-[#ffc439] hover:bg-[#ffd466] text-slate-900 shadow-[#ffc439]/30' 
                       : 'bg-sage-600 hover:bg-sage-700 text-white'
@@ -471,7 +471,7 @@ const Communication: React.FC = () => {
                 {mode === 'chat' && (
                   <button 
                     onClick={startChat}
-                    className="bg-terracotta-500 text-white px-8 py-3 rounded-full hover:bg-terracotta-600 transition shadow-lg shadow-terracotta-200"
+                    className="bg-terracotta-500 text-white px-8 py-3 rounded-full hover:bg-terracotta-600 transition shadow-md"
                   >
                     Enter Chat Room
                   </button>
@@ -536,7 +536,7 @@ const Communication: React.FC = () => {
                     />
                     <button 
                       onClick={sendMessage}
-                      className="bg-terracotta-500 hover:bg-terracotta-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center transition shadow-md shadow-terracotta-100"
+                      className="bg-terracotta-500 hover:bg-terracotta-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center transition shadow-md"
                     >
                       <Send size={20} className="ml-0.5" />
                     </button>

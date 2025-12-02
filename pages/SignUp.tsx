@@ -96,7 +96,7 @@ const SignUp: React.FC = () => {
           <button 
             type="submit" 
             disabled={isLoading}
-            className="w-full bg-sage-600 hover:bg-sage-700 text-white py-4 rounded-full font-bold text-lg transition shadow-lg shadow-sage-200 mt-4 flex items-center justify-center gap-2 group"
+            className="w-full bg-sage-600 hover:bg-sage-700 text-white py-4 rounded-full font-bold text-lg transition shadow-md mt-4 flex items-center justify-center gap-2 group"
           >
             {isLoading ? 'Creating Profile...' : 'Sign Up'}
             {!isLoading && <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />}

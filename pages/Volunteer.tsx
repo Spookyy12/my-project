@@ -102,7 +102,7 @@ const Volunteer: React.FC = () => {
             <button 
               type="submit" 
               disabled={status === 'submitting'}
-              className="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white py-4 rounded-full font-bold text-lg transition shadow-lg shadow-terracotta-200 mt-6 flex items-center justify-center gap-2"
+              className="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white py-4 rounded-full font-bold text-lg transition shadow-md mt-6 flex items-center justify-center gap-2"
             >
               {status === 'submitting' ? 'Submitting...' : 'Submit Application'}
               {!status.includes('submitting') && <Send size={18} />}

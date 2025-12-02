@@ -170,7 +170,7 @@ const Donate: React.FC = () => {
                     onClick={() => { setAmount(val); setError(null); }}
                     className={`py-4 rounded-xl border font-semibold transition-all duration-200 ${
                       amount === val 
-                      ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-md transform scale-105' 
+                      ? 'bg-terracotta-500 text-white border-terracotta-500 shadow-sm transform scale-105' 
                       : 'bg-white border-slate-200 text-slate-600 hover:border-terracotta-300 hover:text-terracotta-600'
                     }`}
                   >
@@ -269,7 +269,7 @@ const Donate: React.FC = () => {
               <button 
                 onClick={handleDonateClick}
                 disabled={isProcessing}
-                className={`w-full py-4 rounded-full font-bold text-lg transition shadow-lg flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed ${
+                className={`w-full py-4 rounded-full font-bold text-lg transition shadow-md flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed ${
                   method === 'paypal' 
                   ? 'bg-[#ffc439] hover:bg-[#ffd466] text-slate-900 shadow-[#ffc439]/30' 
                   : 'bg-sage-600 hover:bg-sage-700 text-white shadow-sage-200'

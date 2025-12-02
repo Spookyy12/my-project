@@ -24,11 +24,11 @@ const Home: React.FC = () => {
             Warm, confidential, and completely anonymous.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <Link to="/communicate?mode=chat" className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 shadow-lg shadow-terracotta-200/50 hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
+            <Link to="/communicate?mode=chat" className="bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
               <MessageCircle className="w-5 h-5" />
               Start Chat
             </Link>
-            <Link to="/communicate?mode=call" className="bg-white/80 border border-white text-sage-700 hover:bg-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 flex items-center justify-center gap-2 shadow-sm">
+            <Link to="/communicate?mode=call" className="bg-white/80 border border-white text-sage-700 hover:bg-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
               <Phone className="w-5 h-5" />
               Schedule Call
             </Link>
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
-              <div className="bg-white/70 backdrop-blur-sm rounded-[2rem] p-12 relative z-10 shadow-lg shadow-sand-200/50 border border-white/60 text-center">
+              <div className="bg-white/70 backdrop-blur-sm rounded-[2rem] p-12 relative z-10 shadow-md border border-white/60 text-center">
                  <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-terracotta-500 mx-auto mb-6 shadow-sm">
                     <Heart size={32} />
                  </div>
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
               If you or someone you know is struggling or in crisis, help is available. 
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-2">
-              <a href="tel:988" className="bg-terracotta-500 text-white px-8 py-3 rounded-full font-bold hover:bg-terracotta-600 transition shadow-lg shadow-terracotta-200">
+              <a href="tel:988" className="bg-terracotta-500 text-white px-8 py-3 rounded-full font-bold hover:bg-terracotta-600 transition shadow-md">
                 Call 988
               </a>
               <a href="tel:911" className="bg-white text-slate-600 border border-slate-200 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition">
